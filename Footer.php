@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
                             <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                                 <h3 class="f-title f_600 t_color f_size_18">Contact</h3>
                                 <p>Mis nooit meer de nieuwste games!</p>
-                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">                        <!--Ik heb hier hulp nodig-->
                                     <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                                     <button class="btn btn_get btn_get_two" type="submit">Abonneer voor de nieuwsbrief!</button>
                                     <p class="mchimp-errmessage" style="display: none;"></p>
