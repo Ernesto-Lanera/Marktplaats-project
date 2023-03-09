@@ -2,6 +2,14 @@
 <html>
 
 <style>
+header {
+  padding: 15px;
+  text-align: center;
+  background: #DEB887;
+  color: white;
+  font-size: 30px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -28,37 +36,28 @@ li a:hover {
 
 </style>
 
-<head>
+<header>
 
 <ul>
 <li><a class="active" href="#">Thuispagina</a></li>
   <li><a href="#">Nieuw!</a></li>
   <li><a href="#">Aanbieding</a></li>
   <li><a href="#">Categorie</a></li>
+</ul>
+
+<form action="/action_page.php">                                                    <!--Ik heb hier hulp nodig-->
+  <label for="fname">Zoeken:</label>
+  <input type="text" id="fname" name="fname" value="Zoeken">
+  
+  <label for="lname">Postcode:</label>
+  <input type="text" id="lname" name="lname" value="Postcode">
+
+  <label for="lname">Afstand:</label>
+  <input type="text" id="lname" name="lname" value="Afstand">
+  <input type="submit" value="Submit">
+</form> 
 
 
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Zoeken" aria-label="search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zoeken</button>
-  </form>
-  </nav>
-
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Postcode" aria-label="search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Postcode</button>
-  </form>
-  </nav>
-
-<nav class="navbar navbar-light bg-light">
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Afstand" aria-label="search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Afstand</button>
-  </form>
-  </nav>
-  </ul>
-
-</head>
+</header>
 
 </html>
