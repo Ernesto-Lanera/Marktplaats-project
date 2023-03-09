@@ -2,8 +2,16 @@
 <html>
 
 <style>
+header {
+  padding: 15px;
+  text-align: center;
+  background: #DEB887;
+  color: white;
+  font-size: 30px;
+}
+
 body {
-  background-color: lightblue;
+  background-color: lightgrey;
 }
 
 h1 {
@@ -16,7 +24,6 @@ h2 {
 p {
   color: black;
 }
-
 </style>
 
 <header>
@@ -32,7 +39,15 @@ p {
 
 
 <body>
-​<img src="###" alt="Foto van een videogames" width="500" height="500">
+<center>
+​<img src="###" alt="Hier foto van een videogame" width="500" height="500">
+<br>
+</br>
+​<img src="###" alt="Hier foto van een videogame" width="500" height="500">
+<br>
+</br>
+​<img src="###" alt="Hier foto van een videogame" width="500" height="500">
+</center>
 </body>
 
 <?php include("Footer.php"); ?>
