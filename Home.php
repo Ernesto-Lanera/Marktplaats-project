@@ -29,7 +29,7 @@ p {
 <header>
 <title>Home</title>
 
-<?php include("Navbar.php"); ?>
+<?php include("Navbar.php"); ?>                                                                                     <!--Hier hulp nodig met navbar invoegen-->
 
 <center>
     <h1>Game Marktplaats</h1>
@@ -50,6 +50,6 @@ p {
 </center>
 </body>
 
-<?php include("Footer.php"); ?>
+<?php include("Footer.php"); ?>                                                                         <!--Hier hulp nodig met footer invoegen-->
 
 </html>
