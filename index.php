@@ -4,7 +4,7 @@
   <title>Home</title>
   <link rel="stylesheet" type="text/css" href="/main.css">
   <?php
-  include("include/Navbar.php");
+  include("includes/navbar.php");
   ?>
   <center>
     <h1>Game Marktplaats</h1>
@@ -25,7 +25,7 @@
 </body>
 
 <?php
-include("include/Footer.php");
+include("includes/footer.php");
 ?>
 
 </html>

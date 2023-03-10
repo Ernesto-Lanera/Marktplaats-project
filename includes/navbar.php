@@ -45,16 +45,16 @@ li a:hover {
   <li><a href="#">Categorie</a></li>
 </ul>
 
-<form action="/action_page.php">                                                    <!--Ik heb hier hulp nodig-->
+<form action="">                                                    <!--Ik heb hier hulp nodig-->
   <label for="fname">Zoeken:</label>
-  <input type="text" id="fname" name="fname" value="Zoeken">
+  <input type="text" id="fname" name="fname">
   
   <label for="lname">Postcode:</label>
-  <input type="text" id="lname" name="lname" value="Postcode">
+  <input type="text" id="lname" name="lname">
 
   <label for="lname">Afstand:</label>
-  <input type="text" id="lname" name="lname" value="Afstand">
-  <input type="submit" value="Submit">
+  <input type="text" id="lname" name="lname">
+  <input type="submit" value="Zoeken">
 </form> 
 
 
