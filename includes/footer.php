@@ -8,6 +8,7 @@
 
     .new_footer_area {
         background: #DEB887;
+        text-align: center;
     }
 
 
@@ -80,10 +81,6 @@
         margin-bottom: 0px;
     }
 
-    .f_widget.about-widget .f_list li {
-        margin-bottom: 15px;
-    }
-
     .f_widget.about-widget .f_list {
         margin-bottom: 0px;
     }
@@ -112,22 +109,6 @@
         transition: all 0.2s linear;
     }
 
-    .ti-facebook:before {
-        content: "\e741";
-    }
-
-    .ti-twitter-alt:before {
-        content: "\e74b";
-    }
-
-    .ti-vimeo-alt:before {
-        content: "\e74a";
-    }
-
-    .ti-pinterest:before {
-        content: "\e731";
-    }
-
     .btn_get_two {
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -145,10 +126,6 @@
         background: #5e2ced;
         border-color: #5e2ced;
         color: white;
-    }
-
-    .new_footer_top .f_social_icon a+a {
-        margin-left: 4px;
     }
 
     .new_footer_top .f-title {
@@ -176,44 +153,12 @@
     .new_footer_top .f_widget.about-widget .f_list li a {
         color: #6a7695;
     }
-
-
-
-    @-moz-keyframes myfirst {
-        0% {
-            left: -25%;
-        }
-
-        100% {
-            left: 100%;
-        }
-    }
-
-    @-webkit-keyframes myfirst {
-        0% {
-            left: -25%;
-        }
-
-        100% {
-            left: 100%;
-        }
-    }
-
-    @keyframes myfirst {
-        0% {
-            left: -25%;
-        }
-
-        100% {
-            left: 100%;
-        }
-    }
 </style>
 
 <footer class="new_footer_area bg_color">
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Hulp</h3>
                         <ul class="list-unstyled f_list">
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Rapporteren</a></li>

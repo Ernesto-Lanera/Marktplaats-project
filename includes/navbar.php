@@ -11,7 +11,7 @@ header {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: none;                                                /*fixen*/
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -19,15 +19,16 @@ ul {
 }
 
 li {
-    float: left;
+    float: center;
 }
+
 
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 12px 12px;
-  text-decoration: none;
+  text-decoration: none;                                                  /*fixen*/
 }
 
 li a:hover {
