@@ -40,15 +40,17 @@ li a:hover {
 
 <ul>
 <li><a class="active" href="#">Thuispagina</a></li>
-  <li><a href="#">Nieuw!</a></li>
-  <li><a href="#">Aanbieding</a></li>
-  <li><a href="#">Categorie</a></li>
+  <li><a href="#">Inloggen</a></li>
+  <li><a href="#">Chat</a></li>
 </ul>
 
 <form action="">                                                    <!--Ik heb hier hulp nodig-->
   <label for="fname">Zoeken:</label>
   <input type="text" id="fname" name="fname">
   
+  <label for="fname">Categorie:</label>
+  <input type="text" id="fname" name="fname">
+
   <label for="lname">Postcode:</label>
   <input type="text" id="lname" name="lname">
 
