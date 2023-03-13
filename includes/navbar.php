@@ -44,7 +44,7 @@ form {
 
 <ul>
 <li><a class="active" href="Index.php">Homepagina</a></li>
-  <li><a href="login/login.html">Inloggen</a></li>
+  <li><a href="login/login.php">Inloggen</a></li>
   <li><a href="#">Chat</a></li>
 </ul>
 
