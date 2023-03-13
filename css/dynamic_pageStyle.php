@@ -2,10 +2,10 @@
 
 header("Content-type: text/css; charset: UTF-8");
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "articles";
+$servername = "20.224.252.175";
+$username = "marktplaats4b";
+$password = "password";
+$database = "marktplaats";
 
 
 // Create connection
@@ -23,7 +23,7 @@ if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
     $article_Images = $row["article_Images"];
-  }
+}
 }
 
 ?>
@@ -72,10 +72,9 @@ body {
     padding: 15px;
 }
 
-.article_images {
-    background-image: url(<?php echo $article_Images ?>);
-    height: 300px;
-    width: 450px;
+.article_images img{
+    height: 180px;
+    width: 320px;
     background-size: cover;
     background-position: center;
 }

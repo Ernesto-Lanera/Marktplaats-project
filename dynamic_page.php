@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "articles";
+$servername = "20.224.252.175";
+$username = "marktplaats4b";
+$password = "password";
+$database = "marktplaats";
 
 
 // Create connection
@@ -41,7 +41,7 @@ function verzenden(){
   }
 }
 
-verzenden()
+
 ?>
 
 <!DOCTYPE html>
@@ -50,7 +50,7 @@ verzenden()
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/dynamic_pageStyle.php">
+    <link rel="stylesheet" href="css/dynamic_pageStyle.php">
     <title><?php $SITE_TITLE ?></title>
 </head>
 <body>
@@ -58,9 +58,10 @@ verzenden()
     <div class="back_button"></div>
     <div class="content_row">
     <div class="article_name"><?php echo $article_Name ?></div><br>
-    <div class="article_images"><?php ?></div><br>
+    <div class="article_images"><?php echo '<img src="data:image/jpeg;base64,'. base64_encode($article_Images) .'" />';
+ ?></div><br>
     <div class="shipping_cost"><?php echo $article_Description ?></div><br>
-    <div class="shipping_way"></div><br>
+    <div class="shipping_way"><?php verzenden() ?></div><br>
     <div class="article_creation_date">$article_creation_date</div><br>
     <div class="watch_counter"></div><br>
     <div class="total_saved_article"></div><br>
