@@ -26,7 +26,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 12px;
   text-decoration: none;
 }
 
@@ -34,21 +34,27 @@ li a:hover {
   background-color: #AFEEEE;
 }
 
+form {
+  font-size: 14px;
+}
+
 </style>
 
 <header>
 
 <ul>
-<li><a class="active" href="#">Thuispagina</a></li>
-  <li><a href="#">Nieuw!</a></li>
-  <li><a href="#">Aanbieding</a></li>
-  <li><a href="#">Categorie</a></li>
+<li><a class="active" href="Index.php">Homepagina</a></li>
+  <li><a href="login/login.html">Inloggen</a></li>
+  <li><a href="#">Chat</a></li>
 </ul>
 
 <form action="">                                                    <!--Ik heb hier hulp nodig-->
   <label for="fname">Zoeken:</label>
   <input type="text" id="fname" name="fname">
-  
+
+  <label for="fname">Categorie:</label>
+  <input type="text" id="fname" name="fname">
+
   <label for="lname">Postcode:</label>
   <input type="text" id="lname" name="lname">
 
