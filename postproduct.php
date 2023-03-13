@@ -3,24 +3,24 @@
   include './includes/functions.inc.php';
   ?>
   <form action="postproduct.php" method="POST"><br>
-            <input type="text" name="title" placeholder="title van uw post" required><br>
+            <input type="text" name="prod_Title" placeholder="prod_Title van uw post" required><br>
             <textarea name="description" placeholder="Product beschrijving" required></textarea><br>
             <button type="submit" name="submit">Verzenden</button>
             <?php
-            $stmt = $conn->prepare("INSERT INTO product (ID, title, description) VALUES (null, ?, ?, ?)");
+            $stmt = $conn->prepare("INSERT INTO product (ID, prod_Title, description) VALUES (null, ?, ?, ?)");
 
             if (isset($_POST["submit"])) {
-              $title = $_POST["title"];
+              $prod_Title = $_POST["prod_Title"];
               $description = $_POST["description"];
 
-              $stmt->bind_param("sss", $title, $description);
+              $stmt->bind_param("sss", $prod_Title, $description);
 
-              if (emptyInputProduct( $title, $description) !== false) {
+              if (emptyInputProduct( $prod_Title, $description) !== false) {
                 header("location: postproduct.php?error=emptyinput");
                 exit();
               }
 
-              createProduct($conn, $title, $description);
+              createProduct($conn, $prod_Title, $description);
 
               $stmt->execute();
               header("Location: postproduct.php");
