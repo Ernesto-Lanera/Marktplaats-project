@@ -7,7 +7,7 @@
   <body>
     <div class="contact-container">
       <h1>Contact</h1>
-      <form method="POST" action="contact.php">
+      <form method="POST" action="contactdb.php">
         <label for="name">Naam:</label>
         <input type="text" id="name" name="name"><br>
 
