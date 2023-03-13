@@ -13,7 +13,7 @@
 
     .new_footer_top {
         padding: 120px 0px 270px;
-        position: relative;
+        position: absolute;
         overflow-x: hidden;
     }
 
@@ -176,6 +176,7 @@
     .new_footer_top .f_widget.about-widget .f_list li a {
         color: #6a7695;
     }
+
 
 
     @-moz-keyframes myfirst {

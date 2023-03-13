@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <header>
-  <title>Home</title>
+  <title>Homepagina</title>
   <link rel="stylesheet" type="text/css" href="/main.css">
   <?php
   include("includes/navbar.php");
   ?>
   <center>
     <h1>Game Marktplaats</h1>
-    <h2>Koop de coolste games!</h2>
+    <h4>Koop de coolste games!</h4>
   </center>
 </header>
 
