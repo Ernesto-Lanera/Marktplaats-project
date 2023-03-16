@@ -14,13 +14,13 @@
 
 <body>
   <center>
-    ​<img src="includes/1.jpg" alt="Hier foto van een videogame" width="1000" height="500">
+    ​<img src="Image/1.jpg" alt="Hier foto van een videogame" width="1000" height="500">
     <br>
     </br>
-    ​<img src="includes/2.jpg" alt="Hier foto van een videogame" width="1000" height="500">
+    ​<img src="Image/2.jpg" alt="Hier foto van een videogame" width="1000" height="500">
     <br>
     </br>
-    ​<img src="includes/3.jpg" alt="Hier foto van een videogame" width="1000" height="500">
+    ​<img src="Image/3.jpg" alt="Hier foto van een videogame" width="1000" height="500">
   </center>
 </body>
 
