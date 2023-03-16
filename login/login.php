@@ -8,6 +8,11 @@
 	<body>
 		<div class="login">
 			<h1>Login</h1>
+			<?php if (isset($_GET['error'])) { ?>
+
+<p class="error"><?php echo $_GET['error']; ?></p>
+
+<?php } ?>
 			<form action="authenticate.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>

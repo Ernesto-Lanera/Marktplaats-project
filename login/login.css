@@ -58,3 +58,16 @@ body {
   background-color: #d1ccaf;
     transition: background-color 0.2s;
 }
+.error {
+
+    background: #F2DEDE;
+ 
+    color: #0c0101;
+ 
+    padding: 10px;
+ 
+    width: 95%;
+ 
+    border-radius: 5px;
+ 
+    margin: 20px auto;}
