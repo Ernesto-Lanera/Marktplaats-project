@@ -14,14 +14,16 @@
 
 <body>
   <center>
-    ​<img src="Image/1.jpg" alt="Hier foto van een videogame" width="1000" height="500">
+  ​<img src="image/1.jpg" alt="Hier foto van een videogame" width="600" height="300">
     <br>
     </br>
-    ​<img src="Image/2.jpg" alt="Hier foto van een videogame" width="1000" height="500">
+    ​<img src="image/2.jpg" alt="Hier foto van een videogame" width="600" height="300">
     <br>
     </br>
-    ​<img src="Image/3.jpg" alt="Hier foto van een videogame" width="1000" height="500">
+    ​<img src="image/3.jpg" alt="Hier foto van een videogame" width="600" height="300">
   </center>
+  <br>
+</br>
 </body>
 
 <?php
