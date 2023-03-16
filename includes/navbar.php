@@ -3,13 +3,12 @@
 
 <style>
 header {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background: #DEB887;
   color: white;
   font-size: 20px;
 }
-
 
 ul {
   list-style-type: none;                                                /*fixen*/
