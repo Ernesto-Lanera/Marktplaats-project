@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "marktplaats_local";
+$servername = "20.160.126.8";
+$username = "marktplaats4";
+$password = "marktplaats4@";
+$database = "marktplaats";
 
 
 // Create connection
