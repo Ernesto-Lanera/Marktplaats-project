@@ -22,9 +22,8 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dynamic_pageStyle.php">
-    <?php echo $fonts ?>
     <title><?php echo $article_Name ?></title>
-    <script src="https://kit.fontawesome.com/a2fe86e1a8.js" crossorigin="anonymous"></script>
+    <?php echo $fonts ?>
 </head>
 <body>
 <div class="row_container">
@@ -70,5 +69,6 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
           </div>
     </div>
     </div>
+
 </body>
 </html> 

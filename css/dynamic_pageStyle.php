@@ -5,6 +5,10 @@ header("Content-type: text/css; charset: UTF-8");
 
 ?>
 
+body {
+  background-color: #f7f7f6;
+  margin: 0 !important;
+}
 
 .row_container {
     display: flex;
