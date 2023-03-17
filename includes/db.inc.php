@@ -1,14 +1,16 @@
 <?php
 $servername = "localhost";
-$dbUsername = "root";
+$username = "root";
 $password = "";
-$dbname = "marktplaats";
+$database = "marktplaats_local";
 
-// create connection
-$conn = new mysqli($servername, $dbUsername, $password, $dbname);
 
-// check connection
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+// echo $servername, $username, $password, $database;
+
+// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-?>
+echo "Connected successfully";
