@@ -5,16 +5,17 @@
   ?>
 
 <?php
+if (isset($_POST["submit"])) {
     $prod_Title = $_POST["prod_Title"];
     $prod_Description = $_POST["prod_Description"];
     echo $prod_Title;
     echo $prod_Description;
 
- $sql = "INSERT INTO postproduct (prod_ID, prod_Title, prod_Description) VALUES (null, '$prod_Title', '$prod_Description')";
+ $sql = "INSERT INTO postproduct (prod_ID, prod_Title, prod_Description) VALUES (null, '$prod_Title', '$prod_Description',)";
 
-echo $sql;
+//echo $sql;
  $result = $conn->query($sql);
-
+}
 //header("Location: postproduct.php");
 
 
