@@ -2,7 +2,7 @@
 
 include './includes/article.db.inc.php';
 include './includes/acc.db.inc.php';
-include './includes/style.db.inc.php';
+
 
 function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows what shipping mehtod user chose.
   if ($GLOBALS['verzending'] == "3"){
@@ -22,16 +22,19 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/dynamic_pageStyle.php">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title><?php echo $article_Name ?></title>
-    <?php echo $fonts ?>
+    <?php include './includes/style.db.inc.php'; ?>
+    <style>html, body { background-color: #F7F7F6; }</style>
 </head>
 <body>
+<?php include './includes/navbar.php' ?>
 <div class="row_container">
     <div class="back_button"></div>
     <div class="content_row">
     <div class="name_container">
       <div class="article_name"><?php echo $article_Name ?></div><br>
-      <div class="save_article">Bewaar</div>
+      <div class="save_article"><i class="fa-sharp ico-heart fa-solid fa-heart-circle-plus"></i> Bewaar</div>
     </div>
     <div class="creation_container">
     <div class="watch_counter"><i class="fa-sharp grey fa-regular fa-eye"></i>  40</div><br>
@@ -46,21 +49,27 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
         <div class="shipping_way"><?php verzenden()?> <br> DUMMY $9,95</div>
       </div>
     </div>
-    <div class="share_article">Deel dit artikel met al je maten!</div>
-    <div class="article_description"><?php echo $article_Description ?></div><br>
-    <div class="article_id">Artikel nummer: <?php echo $article_ID ?></div>
+    <div class="share_article"><div class="share_header">Deel via:</div>
+    <div class="share_ico"><img src="./Image/icons/whatsapp.png" alt="Deel met whatsapp"></div>
+    <div class="share_ico"><img src="./Image/icons/facebook.png" alt="Deel met facebook"></div>
+    <div class="share_ico"><img src="./Image/icons/twitter.png" alt="Deel met twitter"></div>  
+    <div class="share_ico"><img src="./Image/icons/email.png" alt="Deel met email"></div>
+  </div>
+    <div class="article_description"><div class="bold">Beschrijving:</div><br><?php echo $article_Description ?></div><br>
+    <div class="article_id">Advertentienummer: <?php echo $article_ID ?></div>
     </div>
     
     <div class="data_row">
         <div class="user_data">
+          <div class="follow_user"><i class="fa-sharp blue fa-solid fa-user-plus"></i></div>
           <div class="data user_name_container">
               <div class="user_name"><?php echo $user_name?></div>
               <div class="user_active_since"><?php echo "Gebruiker is actief vanaf: " . $active_Since?></div>
               <div class="see_more">Bekijk meer advertenties</div>
             </div>
             <div class="data contact_container">
-              <div class="user_location"><i class="fa-sharp blue fa-solid fa-location-crosshairs"></i>  <?php echo $user_Location?></div>
-              <div class="user_telephone"><?php echo $telephone ?></div>
+              <div class="user_location"><i class="fa-sharp ico_location fa-solid fa-location-crosshairs"></i>  <?php echo $user_Location?></div>
+              <div class="user_telephone"><i class="fa-solid ico_location fa-phone"></i><?php echo $telephone ?></div>
             </div>
         <div class="data button_container">
           <div class="bericht_button"><i class="fa-sharp ico_button fa-regular fa-comments"></i>bericht </div>

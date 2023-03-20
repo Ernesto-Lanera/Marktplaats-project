@@ -1,61 +1,47 @@
-<!DOCTYPE html>
-<html>
+<link rel="stylesheet" href="./css/navbar.css">
+<div class="navbar">
+<div class="orange_bar"></div>
 
-<style>
-header {
-  padding: 10px;
-  text-align: center;
-  background: #DEB887;
-  color: white;
-  font-size: 20px;
-}
+<div class="top_bar">
+  <div class="user_info">
+  <div class="logo"></div>
+    <a href="">Help en info</a>
+    <a href="">Voorwaarden</a>
+    <a href="">Veiligheidscentrum</a>
+  </div>
 
-ul {
-  list-style-type: none;                                                /*fixen*/
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #DEB887;
-}
+  <div class="user_navigation">
+    <a href=""><i class="fa-regular nav_icon fa-comments"></i>Berichten</a>
+    <a href=""><i class="fa-regular nav_icon fa-bell"></i>Meldingen</a>
+    <a href=""><i class="fa-regular nav_icon fa-user"></i>Inloggen</a>
+    <div class="publish_article"><i class="fa-solid nav_icon_white fa-thumbtack"></i>Plaats advertentie</div>
+  </div>
+</div>
+<div class="filter_bar">
+<input type="search" placeholder="">
+<select id="categorie" name="categorie">
+  <option value="shooter">shooter</option>
+  <option value="racing">racing</option>
+  <option value="fighter">fighter</option>
+  <option value="MMORPG">MMORPG</option>
+</select>
+<input type="text" placeholder="Search..">
+<select id="afstand" name="afstand">
+  <option value="10KM">10KM</option>
+  <option value="15KM">15KM</option>
+  <option value="20KM">20KM</option>
+  <option value="20KM >">20KM ></option>
+</select>
+<button type="submit">zoek</button>
+</div>
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: left;
-  padding: 10px 12px;
-  text-decoration: none;                                                  /*fixen*/
-}
-
-li a:hover {
-  background-color: #AFEEEE;
-}
-
-</style>
-
-<header>
-
-<ul>
-<li><a class="active" href="Index.php">Homepagina</a></li>
-  <li><a href="login/login.php">Inloggen</a></li>
-  <li><a href="#">Chat</a></li>
-</ul>
-<form action="">                                                    <!--Ik heb hier hulp nodig-->
-  <label for="fname">Zoeken:</label>
-  <input type="text" id="fname" name="fname">
-  <label for="fname">Categorie:</label>
-  <input type="text" id="fname" name="fname">
-  <label for="lname">Postcode:</label>
-  <input type="text" id="lname" name="lname">
-  <label for="lname">Afstand:</label>
-  <input type="text" id="lname" name="lname">
-  <input type="submit" value="Zoeken">
-</form> 
-
-
-</header>
-
-</html>
+<div class="categories">
+  <div class="categorie_main">DUMMY</div>
+  <div class="categorie">DUMMY</div>
+  <div class="categorie">DUMMY</div>
+  <div class="categorie">DUMMY</div>
+  <div class="categorie">DUMMY</div>
+  <div class="categorie">DUMMY</div>
+  <div class="categorie">DUMMY</div>
+</div>
+</div>
