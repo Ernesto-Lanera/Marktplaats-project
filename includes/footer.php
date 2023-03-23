@@ -1,50 +1,29 @@
-<!DOCTYPE html>
-<html>
-
-<style>
-body {
-    background: #DEB887;
-}
-
-.new_footer_area {
-    background: #DEB887;
-    text-align: center;
-}
-
-
-.new_footer_top {
-    padding: 120px 0px 270px;
-    position: relative;
-      overflow-x: hidden;
-}
-.new_footer_area .footer_bottom {
-    padding-top: 5px;
-    padding-bottom: 50px;
-}
-.footer_bottom {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 20px;
-    color: #7f88a6;
-    padding: 27px 0px;
-}
-
-</style>
-
-
-<footer class="new_footer_area bg_color">
-
-                        <div class="col-lg-3 col-md-6">
-                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                                <h3 class="f-title f_600 t_color f_size_18">Hulp</h3>
-                                <ul class="list-unstyled f_list">
-                                    <li><a href="#">FAQ</a></li>
-                                    <li><a href="#">rapporteren</a></li>
-                                    <li><a href="#">Documentatie</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-        </footer>
-
-</html>
+<link rel="stylesheet" href="./css/footer.css">
+<div class="footer">
+<div class="all_categories">
+    <h1>Game categorieën</h1>
+</div>
+<div class="footer_navigation">
+    <div class="top_links">
+        <div class="top_link">Blog</div>
+        <div class="top_link">Marktplaats zakelijk</div>
+        <div class="top_link">Veilig en succesvol</div>
+        <div class="top_link">Help en Info</div>
+        <div class="top_link">Voorwaarden</div>
+        <div class="top_link">Privacyverklaring</div>
+        <div class="top_link">Cookiebeleid</div>
+        <div class="top_link">Advertentievoorkeuren</div>
+    </div>
+    <div class="bottom_links">
+        <div class="bottom_link">Over Marktplaats</div>
+        <div class="bottom_link">Werken bij</div>
+        <div class="bottom_link">Perskamer</div>
+        <div class="bottom_link">Adevinta</div>
+        <div class="bottom_link">2dehands</div>
+        <div class="bottom_link">2ememain</div>
+        <div class="bottom_link">Sitemap</div>
+    </div>
+</div>
+</div>
+<div class="disclaimer"><p>Marktplaats is niet aansprakelijk voor (gevolg)schade die voortkomt uit het gebruik van deze site, dan wel uit fouten of ontbrekende functionaliteiten op deze site.
+Copyright © 2023 Marktplaats B.V. Alle rechten voorbehouden.</p></div>

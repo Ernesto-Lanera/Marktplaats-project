@@ -1,29 +1,4 @@
-<?php
-$servername = "20.224.252.175";
-$username = "marktplaats4b";
-$password = "password";
-$database = "marktplaats";
-
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-
-$sql = "SELECT * FROM `styles`";
-$result = mysqli_query($conn, $sql);
-
-if (mysqli_num_rows($result) > 0) {
-  // output data of each row
-  while($row = mysqli_fetch_assoc($result)) {
-    $fonts = $row["fonts"];
-  }
-} else {
-  echo "0 results";
-}
-
-?>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Serif:wght@200;300;400;500&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a2fe86e1a8.js" crossorigin="anonymous"></script>

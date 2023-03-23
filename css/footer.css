@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    background-color: white;
+}
+
+.top_links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.top_link {
+    padding: 9px 16px;
+    display: flex;
+}
+
+.bottom_links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.bottom_link {
+    padding: 9px 16px;
+    display: flex;
+}
