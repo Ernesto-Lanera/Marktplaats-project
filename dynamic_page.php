@@ -29,11 +29,11 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
 </head>
 <body>
 <?php include './includes/navbar.php' ?>
+<div class="directory">Hier komen de navigatie</div>
 <div class="row_container">
-    <div class="back_button"></div>
     <div class="content_row">
     <div class="name_container">
-      <div class="article_name"><?php echo $article_Name ?></div><br>
+      <div class="article_name"><?php echo $article_Name ?></div>
       <div class="save_article"><i class="fa-sharp ico-heart fa-solid fa-heart-circle-plus"></i> Bewaar</div>
     </div>
     <div class="creation_container">
@@ -78,6 +78,6 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
           </div>
     </div>
     </div>
-
+    <?php include './includes/footer.php'; ?>
 </body>
 </html> 

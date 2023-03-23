@@ -18,7 +18,7 @@ html, body{
     position: relative;
     gap: 15px;
     margin-top: 15px;
-    max-width: 1440px;
+    width: 100%;
 }
 
 .content_row {
@@ -47,8 +47,8 @@ html, body{
 .article_images img{
     height: 260px;
     width: 400px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     box-shadow: 0 1px 2px rgba(0,0,0,.15), 0 -1px 2px rgba(0,0,0,.05);
 }
 
@@ -167,6 +167,7 @@ font-size: 0.95rem;
   flex-direction: column;
   width: 100%;
   padding: 10px 15px 5px 15px;
+  gap: 10px;
 }
 
 .follow_user {
