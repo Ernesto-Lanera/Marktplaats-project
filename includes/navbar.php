@@ -20,12 +20,13 @@
 <div class="filter_bar">
 <input type="search" placeholder="">
 <select id="categorie" name="categorie">
+<option value="shooter">Alle categorieën</option>
   <option value="shooter">shooter</option>
   <option value="racing">racing</option>
   <option value="fighter">fighter</option>
   <option value="MMORPG">MMORPG</option>
 </select>
-<input type="text" placeholder="Search..">
+<input type="text" placeholder="Postcode">
 <select id="afstand" name="afstand">
   <option value="10KM">10KM</option>
   <option value="15KM">15KM</option>
@@ -36,7 +37,7 @@
 </div>
 
 <div class="categories">
-  <div class="categorie_main">DUMMY</div>
+  <div class="categorie_main">DUMMY alle</div>
   <div class="categorie">DUMMY</div>
   <div class="categorie">DUMMY</div>
   <div class="categorie">DUMMY</div>

@@ -89,7 +89,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 20px;
     width: 100%;
     padding: 16px;
     background-color: #FFFFFF;
@@ -107,4 +107,70 @@ a {
     background-color: #FFFFFF;
     border-left: 1px solid #e5e5e4;
     padding: 16px;
+}
+
+input[type="search"] {
+    width: 300px;
+    height: 35px;
+    color: #2d3c4d;
+    border: 1px solid #c2c2c1;
+    border-radius: 3px 0px 0px 3px;
+}
+
+select#categorie {
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border-top: 1px solid #c2c2c1;
+    border-bottom: 1px solid #c2c2c1;
+    border-right: none;
+    border-left: none;
+    height: 35px;
+    width: 200px;
+    color: #2d3c4d;
+    padding: 0px 3px ;
+    background: #f7f7f6;
+}
+
+input[type="text"] {
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid #c2c2c1;
+    height: 33px;
+    width: 100px;
+    color: #4B5867;
+    padding: 0px 3px ;
+}
+
+select#afstand {
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border-top: 1px solid #c2c2c1;
+    border-bottom: 1px solid #c2c2c1;
+    border-right: none;
+    border-left: none;
+    height: 35px;
+    width: 150px;
+    color: #4B5867;
+    padding: 0px 6px ;
+    background: #f7f7f6;
+}
+
+button {
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid #c2c2c1;
+    height: 35px;
+    width: 150px;
+    color: #116db4;
+    border-radius: 0 3px 3px 0;
+    padding: 0px 3px ;
+    background: #f7f7f6;
 }
