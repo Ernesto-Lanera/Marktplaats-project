@@ -6,14 +6,11 @@
   <?php
   include("includes/navbar.php");
   ?>
-  <center>
-    <h1>Game Marktplaats</h1>
-    <h2>Koop de coolste games!</h2>
-  </center>
 </header>
 
 <body>
-  <center>
+    <h1>Game Marktplaats</h1>
+    <h2>Koop de coolste games!</h2>
   ​<img src="image/1.jpg" alt="Hier foto van een videogame" width="600" height="300">
     <br>
     </br>
@@ -21,7 +18,6 @@
     <br>
     </br>
     ​<img src="image/3.jpg" alt="Hier foto van een videogame" width="600" height="300">
-  </center>
   <br>
 </br>
 </body>

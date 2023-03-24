@@ -1,3 +1,4 @@
+<?php include 'style.db.inc.php'; ?>
 <link rel="stylesheet" href="./css/navbar.css">
 <div class="navbar">
   <div class="orange_bar"></div>
