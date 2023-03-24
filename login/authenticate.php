@@ -61,7 +61,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
                 $_SESSION['id'] = $row['id'];
 
-                header("Location: http://localhost/gmarktplaats/Marktplaats-project/index.php");
+                header("Location: http://localhost/gmarktplaats/Marktplaats-project/home.php");
 
                 exit();
 

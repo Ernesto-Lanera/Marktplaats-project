@@ -43,7 +43,7 @@ class Bid {
     }
  
     if (isset($item["bid_end"]) && strtotime("now") >= strtotime($item["bid_end"])) {
-      $this->error = "Bidding has ended";
+      $this->error = "Bieding is afgelopen";
       return false;
     }
  
