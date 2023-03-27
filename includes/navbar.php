@@ -21,15 +21,15 @@
   <div class="filter_bar">
     <input type="search" placeholder="">
     <select name="categoryId" id="categorie">
-      <option value="" disabled="">Kies categorie:</option>
+    <option value="" disabled="">Kies categorie:</option>
       <option selected="" value="0">Alle categorieën…</option>
-      <option value="1">Shooter</option>
-      <option value="2">Racing</option>
+      <option value="1">Action</option>
+      <option value="2">Sports</option>
       <option value="3">MMORPG</option>
       <option value="4">Fighting</option>
       <option value="5">Action-adventure</option>
-      <option value="6">Simulation and Sports</option>
-      <option value="7">Puzzels and Party games</option>
+      <option value="6">Simulation</option>
+      <option value="7">Puzzels</option>
       <option value="8">Strategy</option>
       <option value="9">Platformers</option>
       <option value="10">Other</option>
@@ -46,11 +46,11 @@
 
   <div class="categories">
     <div class="categorie_main">Alle categorieën</div>
-    <div class="categorie">Shooter</div>
+    <div class="categorie">Action</div>
+    <div class="categorie">Sports</div>
     <div class="categorie">MMORPG</div>
-    <div class="categorie">Racing</div>
+    <div class="categorie">Fighting</div>
     <div class="categorie">Platformers</div>
     <div class="categorie">Action-adventure</div>
-    <div class="categorie">Fighting</div>
   </div>
 </div>
