@@ -15,6 +15,8 @@
             <label for="1">Ophalen</label><br>
             <input type="radio" id="2" name="ophalen_Verzenden" value="2">
             <label for="2">Verzenden</label><br>
+            <input type="radio" id="3" name="ophalen_Verzenden" value="3">
+            <label for="3">Openhalen Of Verzenden</label><br>
 
             <textarea name="article_Description" placeholder="Product beschrijving" required></textarea><br>
             <select>
