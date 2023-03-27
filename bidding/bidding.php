@@ -60,11 +60,11 @@ class Bid {
   }
 }
  
-define("DB_HOST", "localhost");
+define("DB_HOST", "20.224.252.175");
 define("DB_NAME", "marktplaats");
 define("DB_CHARSET", "utf8mb4");
-define("DB_USER", "root");
-define("DB_PASSWORD", "");
+define("DB_USER", "marktplaats4b");
+define("DB_PASSWORD", "password");
  
 $_BID = new Bid();
 ?>
