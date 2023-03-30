@@ -9,7 +9,7 @@ html, body{
   margin: 0 !important;
 }
 
-.row_container {
+.main_container {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -35,13 +35,14 @@ html, body{
 
 .data_row {
     background-color: #FFFFFF;
-    width: 20%;
+    width: 100%;
     display: flex;
     height: 100%;
     position: relative;
     box-shadow: 0 1px 2px rgba(0,0,0,.15), 0 -1px 2px rgba(0,0,0,.05);
     border-radius: 4px;
     overflow: hidden;
+    flex-direction: column;
 }
 
 .article_images img{
@@ -266,6 +267,42 @@ font-size: 0.95rem;
   margin-bottom: 10px;
 }
 
+.bid_container{
+  background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15), 0 -1px 2px rgba(0,0,0,.05);
+    border-radius: 4px;
+    overflow: hidden;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+h2 {
+  margin: 0px;
+  padding: 7px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.row_container{
+  display: flex;
+  flex-direction: column;
+}
+
 .website_button {
   background-color: #116db4;
 }
@@ -298,4 +335,37 @@ cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+}
+
+input[type="number"] {
+    width: 118%;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #c2c2c1;
+    padding: 0 12px;
+}
+
+form button {
+  background-color: #fff !important;
+    border-color: #116db4 !important;
+    color: #116db4 !important;
+    width: 130%;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #c2c2c1;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: #dde5f4;
+}
+
+.bid_button:hover {
+    background-color: #dde5f4 !important;
+}
+
+.current_Bidding {
+  padding: 7px 17px;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2d3c4d;
 }

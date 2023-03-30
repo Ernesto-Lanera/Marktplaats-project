@@ -1,5 +1,5 @@
 <?php 
-
+include './includes/db.inc.php';
 include './includes/article.db.inc.php';
 include './includes/acc.db.inc.php';
 include './bidding/bidding.php';
@@ -31,7 +31,7 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
 <body>
 <?php include './includes/navbar.php' ?>
 <div class="directory">Hier komen de navigatie</div>
-<div class="row_container">
+<div class="main_container">
     <div class="content_row">
     <div class="name_container">
       <div class="article_name"><?php echo $article_Name ?></div>
@@ -60,6 +60,7 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
     <div class="article_id">Advertentienummer: <?php echo $article_ID ?></div>
     </div>
     
+    <div class="row_container">
     <div class="data_row">
         <div class="user_data">
           <div class="follow_user"><i class="fa-sharp blue fa-solid fa-user-plus"></i></div>
@@ -75,15 +76,18 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
         <div class="data button_container">
           <div class="bericht_button"><i class="fa-sharp ico_button fa-regular fa-comments"></i>bericht </div>
           <div class="website_button"><i class="fa-sharp ico_button fa-solid fa-earth-europe"></i> website </div>
-          <form action="dynamic_page.php" method="POST">
-            <input type="text" name="post_bidding" placeholder="Hier uw bod" required><br>
-            <button type="submit" name="submit">Bieding plaatsen</button>
-          </form>
-          <div class="current_Bidding"><?php echo $current_bidding ?></div>
         </div>
-          </div>
-
     </div>
+    <div class="bid_container">
+      <h2>Bieden</h2>
+            <form action="" method="POST">
+                <input type="number" name="post_bidding" min="<?php echo $current_bidding ?>" placeholder="Hier uw bod" required><br>
+                <button class="bid_button" type="submit" name="submit"><i class="ico_button fa-solid fa-gavel"></i>Bieding plaatsen</button>
+              </form>
+              <div class="current_Bidding">Huidige bod: €<?php echo $current_bidding ?> euro</div>
+              </div>
+      </div>
+          </div>
     </div>
     <?php include './includes/footer.php'; ?>
 </body>

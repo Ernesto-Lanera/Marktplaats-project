@@ -41,7 +41,7 @@
       <option value="20KM">20KM</option>
       <option value="20KM >">20KM ></option>
     </select>
-    <button type="submit">zoek</button>
+    <button class="zoek_button" type="submit">zoek</button>
   </div>
 
   <div class="categories">

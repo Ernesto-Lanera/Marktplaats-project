@@ -162,7 +162,7 @@ select#afstand {
     background: #f7f7f6;
 }
 
-button {
+.zoek_button {
     font-family: Roboto,sans-serif;
     font-size: 14px;
     font-weight: 400;

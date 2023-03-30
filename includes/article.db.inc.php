@@ -27,9 +27,9 @@ if (mysqli_num_rows($result) > 0) {
     $article_ID = $row["article_ID"];
     $article_Price = $row["article_Price"];
     $current_bidding = $row["current_Bidding"];
-    global $current_bidding;
     global $verzending;
     global $article_ID;
+    global $current_bidding;
   }
 } else {
   echo "0 results";
