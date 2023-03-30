@@ -26,7 +26,10 @@ if (mysqli_num_rows($result) > 0) {
     $articleCreationDate = $row["articleCreationDate"];
     $article_ID = $row["article_ID"];
     $article_Price = $row["article_Price"];
+    $current_bidding = $row["current_Bidding"];
+    global $current_bidding;
     global $verzending;
+    global $article_ID;
   }
 } else {
   echo "0 results";

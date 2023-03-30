@@ -2,6 +2,7 @@
 
 include './includes/article.db.inc.php';
 include './includes/acc.db.inc.php';
+include './bidding/bidding.php';
 
 
 function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows what shipping mehtod user chose.
@@ -45,7 +46,7 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
       <div class="article_images"><?php echo '<img src="data:image/jpeg;base64,'. base64_encode($article_Images) .'" />';
         ?></div><br>
       <div class="price_container">
-        <div class="article_price">€ <?php echo $article_Price ?></div>
+        <div class="article_price">€ <?php echo $article_Price; ?></div>
         <div class="shipping_way"><?php verzenden()?> <br> DUMMY $9,95</div>
       </div>
     </div>
@@ -74,8 +75,14 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
         <div class="data button_container">
           <div class="bericht_button"><i class="fa-sharp ico_button fa-regular fa-comments"></i>bericht </div>
           <div class="website_button"><i class="fa-sharp ico_button fa-solid fa-earth-europe"></i> website </div>
+          <form action="dynamic_page.php" method="POST">
+            <input type="text" name="post_bidding" placeholder="Hier uw bod" required><br>
+            <button type="submit" name="submit">Bieding plaatsen</button>
+          </form>
+          <div class="current_Bidding"><?php echo $current_bidding ?></div>
         </div>
           </div>
+
     </div>
     </div>
     <?php include './includes/footer.php'; ?>
