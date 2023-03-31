@@ -39,15 +39,7 @@ p {
 
 
 <body>
-<center>
-​<img src="###" alt="Hier foto van een videogame" width="500" height="500">
-<br>
-</br>
-​<img src="###" alt="Hier foto van een videogame" width="500" height="500">
-<br>
-</br>
-​<img src="###" alt="Hier foto van een videogame" width="500" height="500">
-</center>
+
 </body>
 
 <?php include("Footer.php"); ?>                                                                         <!--Hier hulp nodig met footer invoegen-->
