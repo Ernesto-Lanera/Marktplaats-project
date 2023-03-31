@@ -9,18 +9,23 @@
 		<div class="register">
 			<h1>Register</h1>
 			<form action="register.php" method="post" autocomplete="off">
-				<label for="username">
+				<label for="user_name">
 					<i class="fas fa-user"></i>
 				</label>
-				<input type="text" name="username" placeholder="Gebruikersnaam" id="username" required>
+				<input type="text" name="user_name" placeholder="Gebruikersnaam" id="user_name" required>
 				<label for="password">
 					<i class="fas fa-lock"></i>
 				</label>
 				<input type="password" name="password" placeholder="Wachtwoord" id="password" required>
-				<label for="email">
+				<label for="user_Email">
 					<i class="fas fa-envelope"></i>
 				</label>
-				<input type="email" name="email" placeholder="E-mail" id="email" required>
+				<input type="user_Email" name="user_Email" placeholder="E-mail" id="user_Email" required>
+				
+                <label for="postalcode">
+	            <i class="fas fa-postalcode"></i>
+                </label>
+                <input type="postal-Code" name="postal-Code" placeholder="postal-Code" id="postal-Code">
 				<input type="submit" value="Register">
 			</form>
 		</div>
