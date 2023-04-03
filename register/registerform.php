@@ -26,7 +26,7 @@
 
 			<label for="postalcode">
 				<i class="postal_code"></i>
-			</label><input id="postal_Code" name="postal_Code" placeholder="postcode" type="text" pattern="[0-9]{4}[a-z]{2}">
+			</label><input id="postal_Code" name="postal_Code" placeholder="postcode" type="text" pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)([A-Z]{2}$|[a-z]{2}$)">
 			<label for="user_Location">
 				<i class="user_location"></i>
 			</label>
