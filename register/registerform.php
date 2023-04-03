@@ -38,6 +38,7 @@
 			<input type="submit" value="Register">
 		</form>
 	</div>
+	<div class="login"><a href="../login/login.php"></i>Klik hier om in te loggen</a></div>
 </body>
 
 </html>

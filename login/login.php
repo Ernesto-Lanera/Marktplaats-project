@@ -24,10 +24,11 @@
 				<i class="fas fa-lock"></i>
 			</label>
 			<input type="password" name="password" placeholder="wachtwoord" id="password" required>
-			
 			<input type="submit" value="Login">
 		</form>
 	</div>
+	
+	<div class="register"><a href="../register/registerform.php"></i>Klik hier om te registreren</a></div>
 </body>
 
 </html>

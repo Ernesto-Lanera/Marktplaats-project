@@ -14,7 +14,7 @@
     <div class="user_navigation">
       <a href=""><i class="fa-regular nav_icon fa-comments"></i>Berichten</a>
       <a href=""><i class="fa-regular nav_icon fa-bell"></i>Meldingen</a>
-      <a href=""><i class="fa-regular nav_icon fa-user"></i>Inloggen</a>
+      <a href="../marktplaats-project/login/login.php"><i class="fa-regular nav_icon fa-user"></i>Inloggen</a>
       <div class="publish_article"><i class="fa-solid nav_icon_white fa-thumbtack"></i>Plaats advertentie</div>
     </div>
   </div>
