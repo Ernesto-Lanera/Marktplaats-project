@@ -1,7 +1,7 @@
 <?php
 // Change this to your connection info.
 $DATABASE_HOST = '20.224.252.175';
-$DATABASE_USER = 'marktplaats4B';
+$DATABASE_USER = 'marktplaats4b';
 $DATABASE_PASS = 'password';
 $DATABASE_NAME = 'marktplaats';
 // Try and connect using the info above.
@@ -11,12 +11,12 @@ if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 // Now we check if the data was submitted, isset() function will check if the data exists.
-if (!isset($_POST['user_name'], $_POST['password'], $_POST['user_Email'], $_POST['postal_Code'])) {
+if (!isset($_POST['user_name'], $_POST['password'], $_POST['user_Email'], $_POST['postal_Code'], $_POST['user_Location'], $_POST['telephone'])) {
 	// Could not get the data that should have been sent.
 	exit('Please complete the registration form!');
 }
 // Make sure the submitted registration values are not empty.
-if (empty($_POST['user_name']) || empty($_POST['password']) || empty($_POST['user_Email'])|| empty($_POST['postal_Code'])  ) {
+if (empty($_POST['user_name']) || empty($_POST['password']) || empty($_POST['user_Email'])|| empty($_POST['postal_Code'])|| empty($_POST['user_Location'])|| empty($_POST['telephone']) )   {
 	// One or more values are empty.
 	exit('Please complete the registration form');
 }
@@ -32,14 +32,14 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE user_name = ?
 		echo 'Username exists, please choose another!';
 	} else {
 		// Username doesn't exists, insert new account
-if ($stmt = $con->prepare('INSERT INTO accounts (user_name, password, user_Email, postal_Code) VALUES (?, ?, ?, ?)')) {
+if ($stmt = $con->prepare('INSERT INTO accounts (user_name, password, user_Email, telephone, postal_Code, user_Location) VALUES (?, ?, ?, ?, ?, ?)')) {
 	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
 	$password = ($_POST['password']);
 	if ($_POST['password'] === $password) {	
 	}
-	$stmt->bind_param('ssss', $_POST['user_name'], $password, $_POST['user_Email'], $_POST['postal_Code']);
+	$stmt->bind_param('ssssss', $_POST['user_name'], $password, $_POST['user_Email'], $_POST['telephone'], $_POST['user_Location'], $_POST['postal_Code']);
 	$stmt->execute();
-	echo 'You have successfully registered! You can now login!';
+	header("Location: ../login/login.php");
 } else {
 	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
 	echo 'Could not prepare statement!';

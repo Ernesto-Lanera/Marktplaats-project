@@ -11,7 +11,7 @@ if (!$conn) {
     echo "Connection failed!";}
 session_start();
 
-if (isset($_POST['username']) && isset($_POST['password'])) {
+if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
     function validate($data){
 
@@ -25,7 +25,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
     }
 
-    $uname = validate($_POST['username']);
+    $uname = validate($_POST['user_name']);
 
     $pass = validate($_POST['password']);
 
@@ -43,7 +43,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
     }else{
 
-        $sql = "SELECT * FROM accounts WHERE username='$uname' AND password='$pass'";
+        $sql = "SELECT * FROM accounts WHERE user_name='$uname' AND password='$pass'";
 
         $result = mysqli_query($conn, $sql);
 
@@ -51,17 +51,17 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
             $row = mysqli_fetch_assoc($result);
 
-            if ($row['username'] === $uname && $row['password'] === $pass) {
+            if ($row['user_name'] === $uname && $row['password'] === $pass) {
 
                 echo "Logged in!";
 
-                $_SESSION['username'] = $row['username'];
+                $_SESSION['user_name'] = $row['user_name'];
 
                 $_SESSION['name'] = $row['name'];
 
                 $_SESSION['id'] = $row['id'];
 
-                header("Location: http://localhost/gmarktplaats/Marktplaats-project/home.php");
+                header("Location: ../home.php");
 
                 exit();
 
