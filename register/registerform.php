@@ -26,15 +26,15 @@
 
 			<label for="postalcode">
 				<i class="postal_code"></i>
-			</label><input id="postal_Code" name="postal_Code" placeholder="Postcode" type="text" pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)([A-Z]{2}$|[a-z]{2}$)">
+			</label><input id="postal_Code" name="postal_Code" placeholder="Postcode" type="text" pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)([A-Z]{2}$|[a-z]{2}$)" required>
 			<label for="user_Location">
 				<i class="user_location"></i>
 			</label>
-			<input type="user_Location" name="user_Location" placeholder="Woonplaats" id="user_Location">
+			<input type="user_Location" name="user_Location" placeholder="Woonplaats" id="user_Location" required>
 			<label for="telephone">
 				<i class="telephone"></i>
 			</label>
-			<input type="telephone" name="telephone" placeholder="Telefoonnummer" id="telephone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}">
+			<input type="telephone" name="telephone" placeholder="Telefoonnummer" id="telephone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" required>
 			<input type="submit" value="Registreren">
 		</form>
 	</div>
