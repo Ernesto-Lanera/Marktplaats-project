@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<title>Registreren</title>
 	<link href="register.css" rel="stylesheet" type="text/css">
+	<?php
+  include("../includes/navbar.php");
+  ?>
 </head>
 
 <body>
@@ -40,5 +43,7 @@
 	</div>
 	<div class="login"><a href="../login/login.php"></i>Klik hier om in te loggen</a></div>
 </body>
-
+<?php
+include("../footer.php");
+?>
 </html>

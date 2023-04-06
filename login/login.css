@@ -75,7 +75,12 @@ body {
 
     margin: 20px auto;
 }
-.register{
-    text-align: center;
-    position:relative;
-}
+.register{text-align: center;
+    color: #6c786b;
+    width: 20%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #d1ccaf;
+margin-left: 600px;}
+a{text-decoration: none;
+color: #6c786b;}

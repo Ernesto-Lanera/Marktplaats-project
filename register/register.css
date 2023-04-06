@@ -6,7 +6,6 @@
 
 body {
     background-color: #D2B88E;
-    margin: 0;
 }
 
 .register {
@@ -57,7 +56,12 @@ body {
     background-color: #d1ccaf;
     transition: background-color 0.2s;
 }
-.login{
-    text-align: center;
-    position:relative;
-}
+.login{text-align: center;
+    color: #6c786b;
+    width: 20%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #d1ccaf;
+margin-left: 600px;}
+a{text-decoration: none;
+    color: #6c786b;}

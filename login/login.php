@@ -31,7 +31,7 @@
 		</form>
 	</div>
 	
-	<div class="register"><a href="../login/logout.php"></i>Klik hier om te registreren</a></div>
+	<div class="register"><a href="../register/registerform.php">Klik hier om te registreren</a></div>
 </body>
 <?php
 include("../footer.php");
