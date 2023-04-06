@@ -2,7 +2,7 @@
 // Change this to your connection info.
 $DATABASE_HOST = '20.224.252.175';
 $DATABASE_USER = 'marktplaats4b';
-$DATABASE_PASS = 'root';
+$DATABASE_PASS = 'password';
 $DATABASE_NAME = 'marktplaats';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);

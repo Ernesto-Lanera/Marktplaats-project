@@ -85,7 +85,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
 }else{
 
-    header("Location: index.php");
+    header("Location: ../home.php");
 
     exit();
 

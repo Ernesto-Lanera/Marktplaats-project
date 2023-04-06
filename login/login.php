@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Login</title>
+	<title>Inloggen</title>
 	<link href="login.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<div class="login">
-		<h1>Login</h1>
+		<h1>Inloggen</h1>
 		<?php if (isset($_GET['error'])) { ?>
 
 			<p class="error"><?php echo $_GET['error']; ?></p>
@@ -19,12 +19,12 @@
 			<label for="username">
 				<i class="fas fa-user"></i>
 			</label>
-			<input type="text" name="username" placeholder="gebruikersnaam" id="username" required>
+			<input type="text" name="username" placeholder="Gebruikersnaam" id="username" required>
 			<label for="password">
 				<i class="fas fa-lock"></i>
 			</label>
-			<input type="password" name="password" placeholder="wachtwoord" id="password" required>
-			<input type="submit" value="Login">
+			<input type="password" name="password" placeholder="Wachtwoord" id="password" required>
+			<input type="submit" value="Inloggen">
 		</form>
 	</div>
 	

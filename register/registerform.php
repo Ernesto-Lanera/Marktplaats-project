@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Register</title>
+	<title>Registreren</title>
 	<link href="register.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<div class="register">
-		<h1>Register</h1>
+		<h1>Registreren</h1>
 		<form action="register.php" method="post" autocomplete="off">
 			<label for="user_name">
 				<i class="user"></i>
@@ -26,16 +26,16 @@
 
 			<label for="postalcode">
 				<i class="postal_code"></i>
-			</label><input id="postal_Code" name="postal_Code" placeholder="postcode" type="text" pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)([A-Z]{2}$|[a-z]{2}$)">
+			</label><input id="postal_Code" name="postal_Code" placeholder="Postcode" type="text" pattern="^[1-9][0-9]{3} ?(?!sa|sd|ss|SA|SD|SS)([A-Z]{2}$|[a-z]{2}$)">
 			<label for="user_Location">
 				<i class="user_location"></i>
 			</label>
-			<input type="user_Location" name="user_Location" placeholder="woonplaats" id="user_Location">
+			<input type="user_Location" name="user_Location" placeholder="Woonplaats" id="user_Location">
 			<label for="telephone">
 				<i class="telephone"></i>
 			</label>
-			<input type="telephone" name="telephone" placeholder="telefoon" id="telephone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}">
-			<input type="submit" value="Register">
+			<input type="telephone" name="telephone" placeholder="Telefoonnummer" id="telephone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}">
+			<input type="submit" value="Registreren">
 		</form>
 	</div>
 	<div class="login"><a href="../login/login.php"></i>Klik hier om in te loggen</a></div>
