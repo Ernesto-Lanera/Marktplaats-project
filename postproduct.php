@@ -10,7 +10,7 @@
 
 <body>
 
-  <form action="process.php" method="POST">
+  <form action="process.php" method="POST" enctype="multipart/form-data">
     <input type="text" name="article_Name" placeholder="Naam van uw post" required><br>
     <input type="text" name="article_Price" placeholder="Prijs van uw post" required><br>
     <input type="radio" id="1" name="ophalen_Verzenden" value="1">
@@ -19,6 +19,7 @@
     <label for="2">Verzenden</label><br>
     <input type="radio" id="3" name="ophalen_Verzenden" value="3">
     <label for="3">Openhalen Of Verzenden</label><br>
+
 
     <textarea name="article_Description" placeholder="Product beschrijving" required></textarea><br>
     <select>
@@ -30,8 +31,14 @@
       <option value="">c6</option>
     </select><br><br>
     <button type="submit" name="submit">Verzenden</button>
-
   </form>
+
+  
+  <?php
+
+
+
+?>
 </body>
 
 </html>
