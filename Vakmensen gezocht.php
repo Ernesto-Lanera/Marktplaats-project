@@ -24,11 +24,21 @@
   </br>
   <p>Bij intresse stuur een e-mail.</p>
 	<a href = "mailto: vakmensen@mail.com">Stuur E-mail</a>
-    <br>
+    <br></br>
+
+
+<br>
+</br>
+
+<h2>Dankjewel voor u interesse.</h2>
+
 </body>
 
+
+<footer>
 <?php
 include("includes/footer.php");
 ?>
+</footer>
 
 </html>
