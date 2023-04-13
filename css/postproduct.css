@@ -1,0 +1,9 @@
+.postcont {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.postsubcont {
+    padding: 15px;
+    background-color: #FFF;
+}
