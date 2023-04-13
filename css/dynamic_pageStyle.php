@@ -31,6 +31,7 @@ html, body{
     box-shadow: 0 1px 2px rgba(0,0,0,.15), 0 -1px 2px rgba(0,0,0,.05);
     border-radius: 4px;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .data_row {

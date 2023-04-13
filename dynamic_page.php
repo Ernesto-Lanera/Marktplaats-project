@@ -30,7 +30,6 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
 </head>
 <body>
 <?php include './includes/navbar.php' ?>
-<div class="directory">Hier komen de navigatie</div>
 <div class="main_container">
     <div class="content_row">
     <div class="name_container">
@@ -47,7 +46,7 @@ function verzenden(){ //checks if the checkbox is set to 1, 2 or 3. Then shows w
         ?></div><br>
       <div class="price_container">
         <div class="article_price">€ <?php echo $article_Price; ?></div>
-        <div class="shipping_way"><?php verzenden()?> <br> DUMMY $9,95</div>
+        <div class="shipping_way"><?php verzenden()?></div>
       </div>
     </div>
     <div class="share_article"><div class="share_header">Deel via:</div>
