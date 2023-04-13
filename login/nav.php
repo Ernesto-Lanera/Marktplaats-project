@@ -18,3 +18,4 @@
       <div class="publish_article"><i class="fa-solid nav_icon_white fa-thumbtack"></i>Plaats advertentie</div>
     </div>
   </div>
+  
