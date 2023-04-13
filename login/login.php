@@ -35,7 +35,7 @@
     color: #6c786b;" href="../register/registerform.php">Klik hier om te registreren</a></div>
 </body>
 <?php
-include("../footer.php");
+include("./footer.php");
 ?>
 </html>
 			

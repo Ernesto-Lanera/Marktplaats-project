@@ -1,40 +1,38 @@
 <?php
-// Change this to your connection info.
+//connectie database info
 $DATABASE_HOST = '20.224.252.175';
 $DATABASE_USER = 'marktplaats4b';
 $DATABASE_PASS = 'password';
 $DATABASE_NAME = 'marktplaats';
-// Try and connect using the info above.
+// probeert connectie te maken met database
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 
 if (mysqli_connect_errno()) {
-	// If there is an error with the connection, stop the script and display the error.
+	// als het fout gaat met de connectie naar de database
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
-// Now we check if the data was submitted, isset() function will check if the data exists.
+// controleren of alles word opgestuurd
 if (!isset($_POST['user_name'], $_POST['password'], $_POST['user_Email'], $_POST['postal_Code'], $_POST['user_Location'], $_POST['telephone'])) {
-	// Could not get the data that should have been sent.
-	exit('Please complete the registration form!');
+	// niet alles ingevuld
+	exit('vul alles in aub!');
 }
-// Make sure the submitted registration values are not empty.
+// kijken of niks leeg is
 if (empty($_POST['user_name']) || empty($_POST['password']) || empty($_POST['user_Email'])|| empty($_POST['postal_Code'])|| empty($_POST['user_Location'])|| empty($_POST['telephone']) )   {
-	// One or more values are empty.
-	exit('Please complete the registration form');
+	// iets of meer is leeg
+	exit('vul alles in aub');
 }
-// We need to check if the account with that username exists.
+// kijken of account al bestaat met die gebruikersnaam
 if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE user_name = ?')) {
-	// Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
 	$stmt->bind_param('s', $_POST['user_name']);
 	$stmt->execute();
 	$stmt->store_result();
-	// Store the result so we can check if the account exists in the database.
+	// kijken of gebruikersnaam bestaat
 	if ($stmt->num_rows > 0) {
-		// Username already exists
-		echo 'Username exists, please choose another!';
+		// gebruikersnaam bestaat
+		echo 'gebruikersnaam bestaat al kies aub een nieuwe!';
 	} else {
-		// Username doesn't exists, insert new account
+		// gebruikersnaam bestaat niet dus maak een nieuw account
 if ($stmt = $con->prepare('INSERT INTO accounts (user_name, password, user_Email, telephone, postal_Code, user_Location) VALUES (?, ?, ?, ?, ?, ?)')) {
-	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
 	$password = ($_POST['password']);
 	if ($_POST['password'] === $password) {
 		$stmt->bind_param('ssssss', $_POST['user_name'], $password, $_POST['user_Email'], $_POST['telephone'], $_POST['user_Location'], $_POST['postal_Code']);
@@ -45,13 +43,12 @@ if ($stmt = $con->prepare('INSERT INTO accounts (user_name, password, user_Email
     </script>");
 	}
 } else {
-	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
+	//er is iets fout in de database kijk of alle mappen bestaan
 	echo 'Could not prepare statement!';
 }
 	}
 	$stmt->close();
 } else {
-	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all 3 fields.
 	echo 'Could not prepare statement!';
 }
 $con->close();

@@ -6,11 +6,12 @@
 	<title>Registreren</title>
 	<link href="register.css" rel="stylesheet" type="text/css">
 	<?php
-  include("../includes/navbar.php");
+  include("./nav.php");
   ?>
 </head>
 
 <body>
+	
 	<div class="register">
 		<h1>Registreren</h1>
 		<form action="register.php" method="post" autocomplete="off">
@@ -45,6 +46,6 @@
     color: #6c786b;" href="../login/login.php"></i>Klik hier om in te loggen</a></div>
 </body>
 <?php
-include("../footer.php");
+include("./footer.php");
 ?>
 </html>

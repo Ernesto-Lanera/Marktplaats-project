@@ -1,4 +1,4 @@
-<?php include 'style.db.inc.php'; ?>
+<?php include 'style.db.inc.php'?>
 <link rel="stylesheet" href="./css/navbar.css">
 <div class="navbar">
   <div class="orange_bar"></div>
@@ -14,7 +14,15 @@
     <div class="user_navigation">
       <a href=""><i class="fa-regular nav_icon fa-comments"></i>Berichten</a>
       <a href=""><i class="fa-regular nav_icon fa-bell"></i>Meldingen</a>
-      <a href="../marktplaats-project/login/login.php"><i class="fa-regular nav_icon fa-user"></i>Inloggen</a>
+      <?php session_start();
+
+if (isset($_SESSION['login']) )  {
+                 echo " <a role='button'  href='../marktplaats-project/login/logout.php'><i class='fa-regular nav_icon fa-user'></i>uitloggen</a> ";
+              } else {
+                 echo " <a role='button'  href='../marktplaats-project/login/login.php'><i class='fa-regular nav_icon fa-user'></i>Inloggen</a> ";
+              }
+           ?>
+        </div>
       <div class="publish_article"><i class="fa-solid nav_icon_white fa-thumbtack"></i>Plaats advertentie</div>
     </div>
   </div>

@@ -15,9 +15,9 @@
       <a href=""><i class="fa-regular nav_icon fa-comments"></i>Berichten</a>
       <a href=""><i class="fa-regular nav_icon fa-bell"></i>Meldingen</a><?php
       if (isset($_SESSION['login']) )  {
-                 echo " <a role='button'  href='./logout.php'><i class='fa-regular nav_icon fa-user'></i>uitloggen</a> ";
+                 echo " <a role='button'  href='../login/logout.php'><i class='fa-regular nav_icon fa-user'></i>uitloggen</a> ";
               } else {
-                 echo " <a role='button'  href='./login.php'><i class='fa-regular nav_icon fa-user'></i>Inloggen</a> ";
+                 echo " <a role='button'  href='../login/login.php'><i class='fa-regular nav_icon fa-user'></i>Inloggen</a> ";
               }
            ?>
         </div>

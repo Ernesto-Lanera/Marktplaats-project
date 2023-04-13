@@ -1,16 +1,22 @@
 <?php
+//info connectie database
 $sname = "20.224.252.175";
 $unmae = "marktplaats4b";
 $password = "password";
 $db_name = "marktplaats";
-
+//connectie maken met database
 $conn = mysqli_connect($sname, $unmae, $password, $db_name);
 
 if (!$conn) {
-
+//als hij niet goed connect
     echo "Connection failed!";}
 session_start();
-
+//als je al ingellogd bent
+if(isset($_SESSION['login']) && $_SESSION['login'] === true){
+    header("location: home.php");
+    exit;
+}
+//als gebruikersnaam en wachtwoord worden opgestuurd kijken of ze kloppen
 if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
     function validate($data){
@@ -28,7 +34,7 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
     $uname = validate($_POST['user_name']);
 
     $pass = validate($_POST['password']);
-
+// als iets niet is ingevuld
     if (empty($uname)) {
 
         header("Location: index.php?error=User Name is required");
@@ -41,7 +47,9 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
         exit();
 
-    }else{
+    }
+    //zorgt voor dat je inlogt
+    else{
 
         $sql = "SELECT * FROM accounts WHERE user_name='$uname' AND password='$pass'";
 
@@ -51,20 +59,12 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
             $row = mysqli_fetch_assoc($result);
 
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-
-                echo "Logged in!";
-
-                $_SESSION['user_name'] = $row['user_name'];
-
-                $_SESSION['name'] = $row['name'];
-
-                $_SESSION['id'] = $row['id'];
-
-                header("Location: ../home.php");
-
-                exit();
-
+            
+            if($result)
+            {
+                
+                $_SESSION["login"]="1";
+                header("location:../home.php");
             }else{
 
                 header("Location: welcome.php?error=Incorect User name or password");
@@ -85,9 +85,10 @@ if (isset($_POST['user_name']) && isset($_POST['password'])) {
 
 }else{
 
-    header("Location: ../home.php");
+    
 
     exit();
 
-}
+} 
+
 ?>
