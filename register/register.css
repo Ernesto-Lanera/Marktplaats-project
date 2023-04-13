@@ -59,9 +59,6 @@ body {
 .login{text-align: center;
     color: #6c786b;
     width: 20%;
-    padding: 15px;
-    margin-top: 10px;
-    background-color: #d1ccaf;
-margin-left: 600px;}
-a{text-decoration: none;
-    color: #6c786b;}
+    padding: 15px; 
+    margin: 10px auto;
+    background-color: #d1ccaf;}

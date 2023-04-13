@@ -6,7 +6,7 @@
 	<title>Inloggen</title>
 	<link href="login.css" rel="stylesheet" type="text/css">
 	<?php
-  include("../includes/navbar.php");
+  include("./nav.php");
   ?>
 </head>
 
@@ -31,7 +31,8 @@
 		</form>
 	</div>
 	
-	<div class="register"><a href="../register/registerform.php">Klik hier om te registreren</a></div>
+	<div class="register"><a style="text-decoration: none;
+    color: #6c786b;" href="../register/registerform.php">Klik hier om te registreren</a></div>
 </body>
 <?php
 include("../footer.php");

@@ -41,7 +41,8 @@
 			<input type="submit" value="Registreren">
 		</form>
 	</div>
-	<div class="login"><a href="../login/login.php"></i>Klik hier om in te loggen</a></div>
+	<div class="login"><a style="text-decoration: none;
+    color: #6c786b;" href="../login/login.php"></i>Klik hier om in te loggen</a></div>
 </body>
 <?php
 include("../footer.php");
