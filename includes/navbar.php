@@ -5,7 +5,7 @@
 
   <div class="top_bar">
     <div class="user_info">
-      <div class="logo"></div>
+      <a href="../Home.php" class="logo"></a>
       <a href="">Help en info</a>
       <a href="">Voorwaarden</a>
       <a href="">Veiligheidscentrum</a>
@@ -19,11 +19,11 @@
 if (isset($_SESSION['login']) )  {
                  echo " <a role='button'  href='../marktplaats-project/login/logout.php'><i class='fa-regular nav_icon fa-user'></i>uitloggen</a> ";
               } else {
-                 echo " <a role='button'  href='../marktplaats-project/login/login.php'><i class='fa-regular nav_icon fa-user'></i>Inloggen</a> ";
+                 echo " <a role='button'  href='../marktplaats/login/login.php'><i class='fa-regular nav_icon fa-user'></i>Inloggen</a> ";
               }
            ?>
         </div>
-      <div class="publish_article"><i class="fa-solid nav_icon_white fa-thumbtack"></i>Plaats advertentie</div>
+      <a href="./pagina's/postproduct.php" class="publish_article"><i class="fa-solid nav_icon_white fa-thumbtack"></i>Plaats advertentie</a>
     </div>
   </div>
   <div class="filter_bar">

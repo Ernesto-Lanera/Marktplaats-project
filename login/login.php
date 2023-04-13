@@ -1,3 +1,6 @@
+	<?php
+  include("./nav.php");
+  ?>
 <!DOCTYPE html>
 <html>
 
@@ -5,9 +8,7 @@
 	<meta charset="utf-8">
 	<title>Inloggen</title>
 	<link href="login.css" rel="stylesheet" type="text/css">
-	<?php
-  include("./nav.php");
-  ?>
+
 </head>
 
 <body>

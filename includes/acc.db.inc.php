@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) > 0) {
   while($row = mysqli_fetch_assoc($result)) {
     $user_ID = $row["user_ID"];
     $user_name = $row["user_name"];
-    $email = $row["email"];
+    $email = $row["user_Email"];
     $telephone = $row["telephone"];
     $postal_Code = $row["postal_Code"];
     $active_Since = $row["active_Since"];
