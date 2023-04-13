@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "20.224.252.175";
+$username = "marktplaats4b";
+$password = "password";
 $database = "marktplaats";
 
 
