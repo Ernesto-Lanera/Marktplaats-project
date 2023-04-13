@@ -9,9 +9,10 @@ if (isset($_POST["submit"])) {
   $article_Description = $_POST["article_Description"];
   $article_Price = $_POST["article_Price"];
   $ophalen_verzenden = $_POST["ophalen_Verzenden"];
+  $image = addslashes(file_get_contents($_FILES['f1']['tmp_name']));
 
 
-  $sql = "INSERT INTO articles (article_Name, article_Description, article_Price, ophalen_verzenden) VALUES ('$article_Name', '$article_Description', '$article_Price', '$ophalen_verzenden')";
+  $sql = "INSERT INTO articles (article_Name, article_Description, article_Price, ophalen_verzenden, article_Images) VALUES ('$article_Name', '$article_Description', '$article_Price', '$ophalen_verzenden', '$image')";
 
   //echo $sql;
   $result = $conn->query($sql);
@@ -28,12 +29,7 @@ include 'includes/db.inc.php';
     <head>
     </head>
     <body onload="display()">
-        <form name="form1" action="" method="post" enctype="multipart/form-data">
-        <p>Select File</p>
-        <input type="file" name="f1">
-        <input type="submit" name="submit1" value="upload">
-        <input type="submit" name="submit2" value="display">
-        </form>
+
 <script type="text/javascript">
     
     function display() {
@@ -45,7 +41,7 @@ include 'includes/db.inc.php';
 
 </script>
 <?php
-
+/*
 if(isset($_POST["submit1"])){
 
 $image = addslashes(file_get_contents($_FILES['f1']['tmp_name']));
@@ -69,7 +65,7 @@ if(isset($_POST["submit2"])){
     }
     
 }
-
+*/
 ?>
 
     </body>

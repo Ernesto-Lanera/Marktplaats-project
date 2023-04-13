@@ -19,6 +19,11 @@
     <label for="2">Verzenden</label><br>
     <input type="radio" id="3" name="ophalen_Verzenden" value="3">
     <label for="3">Openhalen Of Verzenden</label><br>
+    <p>Select File</p>
+    
+        <input type="file" name="f1" id="uploadInput" />
+<img id="imagePreview" style="width:300px;" class="normal" />
+
 
 
     <textarea name="article_Description" placeholder="Product beschrijving" required></textarea><br>
@@ -33,12 +38,24 @@
     <button type="submit" name="submit">Verzenden</button>
   </form>
 
+
+  <script>
+
+    let uploadInput = document.getElementById("uploadInput");
+
+uploadInput.onchange = function () {
+  let image = new FileReader();
   
-  <?php
+  image.onload = function (e) {
+    document.getElementById("imagePreview").src = e.target.result;
+    };
+  image.readAsDataURL(this.files[0]);
+};
+ 
+    </script>
 
 
 
-?>
 </body>
 
 </html>
